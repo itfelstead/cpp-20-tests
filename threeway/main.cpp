@@ -86,6 +86,11 @@ public:
         return (*this).value <=> rhs.value;
     }
 
+    // Note: If you declare <=> as default, then you'd automatically
+    // get a generated ==. If you define <=> then you WON'T get a
+    // default ==, because compiler assumes generation is non-trivial
+    // (as you bothered to make a non-default <=>)
+    // So we explicitly ask for the default here
     bool operator==(const MyClass& rhs) const = default;
 
     bool operator==( int rhs ) const {
