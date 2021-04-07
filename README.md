@@ -4,9 +4,9 @@ Just a personal play area for c++20 specific code
 
 Main Change:
 - Concepts - improvement to templates. compile time check of template arguments
-- Modules (waiting for compiler support)
-- Ranges Library
-- Coroutines
+- Modules - faster compile times
+- Ranges Library - supports functional patterns (uses concepts support)
+- Coroutines - suspend/resume functions, ease event/state processing
 
 Core Language Changes:
 - (new operator<=>()) Three-way Comparison  
