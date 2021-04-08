@@ -1,8 +1,7 @@
 // “Concepts” - compile time check of template constraints
 //
-//   - 'requires': (requires-expression) compiler time check if template typename satisfies the expression
-//   - 'concept': 
-//
+// compile with;
+//      g++-10 -std=c++20 -fconcepts main.cpp
 //
 
 #include <iostream>
